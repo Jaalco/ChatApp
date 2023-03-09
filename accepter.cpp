@@ -14,11 +14,23 @@ void Accepter::operator()()
 {
     sf::TcpListener listener;
     // TODO the listener has to listen.
+    sf::Socket::Status status
+    status = listener.listen(PORT);
+    if(status != sf::Socket::Done)
+    {
+        std::cout << "Error Listening\n";
+        return;
+    }
     std::cout << "Bound to port\n";
     while (true)
     {
         std::shared_ptr<sf::TcpSocket> socket = std::make_shared<sf::TcpSocket>();
         // TODO accept a connection on socket
+        status = listener.accept(socket);
+        if (status != sf::Socket::Done)
+        {
+            std::cout << "Error Accepting\n";
+        }
         socket_.push(socket);
         std::stringstream ss;
         ss << "Accepted a connection from: "
@@ -29,6 +41,7 @@ void Accepter::operator()()
         std::cout << ss.str();
         std::shared_ptr<Receiver> receiver = std::make_shared<Receiver>(socket, queue_);
         // TODO launch a thread to receive with the receiver
+        std::thread(&Receiver::recv_loop, receiver).detach();
     }
 }
 

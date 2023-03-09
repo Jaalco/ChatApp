@@ -27,6 +27,7 @@ void Receiver::recv_loop()
         std::memset(buffer, 0, 256);
         std::size_t received;
         // TODO receive a message here
+
         {
             std::stringstream ss;
             ss << "Received: \"" << buffer << "\", " << received << " bytes." << std::endl;
