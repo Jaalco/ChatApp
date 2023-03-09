@@ -10,9 +10,11 @@
 
 int main()
 {
-    Queue<std::string> queue;
+    Queue<std::string> queue_;
     List<std::shared_ptr<sf::TcpSocket>> sockets;
     // TODO launch an accepter thread.
+    std::shared_ptr<Accepter> accepter = std::make_shared<Accepter>(queue_, sockets);
+    std::thread()
     while(1)
     {
         std::string s = queue.pop();

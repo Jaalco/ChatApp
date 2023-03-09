@@ -25,7 +25,12 @@ int main()
         std::getline(std::cin, s);
         std::cout << "Sending: \"" << s << "\"" << std::endl;
         // TODO send messages to the server
-        socket->send(s.c_str(), s.size() + 1);
+        status = socket->send(s.c_str(), s.size() + 1);
+        if(status != sf::Socket::Done)
+        {
+            std::cout << "Error sending\n";
+            return;
+        }
     }
     return 0;
 }
