@@ -12,7 +12,10 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c++1y" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +25,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -30,8 +34,23 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++1y" />
+			<Add option="-g" />
 			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="/usr/local/SFML-2.2/include/" />
+			<Add directory="lib" />
 		</Compiler>
+		<Linker>
+			<Add option="-pthread" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add library="sfml-network" />
+			<Add library="jpeg" />
+			<Add directory="lib" />
+			<Add directory="/usr/local/SFML-2.2/lib/" />
+		</Linker>
 		<Unit filename="../accepter.cpp" />
 		<Unit filename="../accepter.h" />
 		<Unit filename="../client.cpp" />
@@ -40,6 +59,7 @@
 		<Unit filename="../receiver.cpp" />
 		<Unit filename="../receiver.h" />
 		<Unit filename="../server.cpp" />
+		<Unit filename="../server.h" />
 		<Unit filename="../util.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

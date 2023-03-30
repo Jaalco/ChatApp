@@ -14,7 +14,7 @@ void Accepter::operator()()
 {
     sf::TcpListener listener;
     // TODO the listener has to listen.
-    sf::Socket::Status status
+    sf::Socket::Status status;
     status = listener.listen(PORT);
     if(status != sf::Socket::Done)
     {
@@ -26,7 +26,7 @@ void Accepter::operator()()
     {
         std::shared_ptr<sf::TcpSocket> socket = std::make_shared<sf::TcpSocket>();
         // TODO accept a connection on socket
-        status = listener.accept(socket);
+        status = listener.accept(*socket);
         if (status != sf::Socket::Done)
         {
             std::cout << "Error Accepting\n";

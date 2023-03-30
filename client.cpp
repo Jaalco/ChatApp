@@ -5,11 +5,12 @@
 #include <iostream>
 #include <thread>
 
-int main()
+int mainclient()
 {
     std::shared_ptr<sf::TcpSocket> socket = std::make_shared<sf::TcpSocket>();
-    auto connect = [&] { return socket->connect(sf::IpAddress::getLocalAddress(), PORT); };
-    net_run(connect, "connect");
+//    auto connect = [&] { return socket->connect(sf::IpAddress::getLocalAddress(), PORT); };
+//    net_run(connect, "connect");
+// TODO ask the user for address
     sf::Socket::Status status = socket->connect(sf::IpAddress::getLocalAddress(), PORT);
     if (status != sf::Socket::Done) {
         return 1;
@@ -29,7 +30,7 @@ int main()
         if(status != sf::Socket::Done)
         {
             std::cout << "Error sending\n";
-            return;
+            return 1;
         }
     }
     return 0;

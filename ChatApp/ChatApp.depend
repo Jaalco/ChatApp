@@ -1,0 +1,235 @@
+# depslib dependency file v1.0
+1680174369 source:/home/scm-studs/b1017692/chat_blanks/accepter.cpp
+	"accepter.h"
+	"receiver.h"
+	"util.h"
+	<iostream>
+	<sstream>
+	<thread>
+
+1680174321 /home/scm-studs/b1017692/chat_blanks/accepter.h
+	"queue.h"
+	"list.h"
+	<SFML/Network.hpp>
+
+1582725583 /home/scm-studs/b1017692/chat_blanks/queue.h
+	<condition_variable>
+	<mutex>
+	<queue>
+
+1582706967 /home/scm-studs/b1017692/chat_blanks/list.h
+	<algorithm>
+	<functional>
+	<list>
+	<mutex>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network.hpp
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Config.hpp
+	"TargetConditionals.h"
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Export.hpp
+	<SFML/Config.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Time.hpp
+	<SFML/System/Export.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/InputStream.hpp
+	<SFML/Config.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/NonCopyable.hpp
+	<SFML/System/Export.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/String.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Utf.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/String.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Thread.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/ThreadLocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/ThreadLocalPtr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/ThreadLocalPtr.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Vector2.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/System/Vector3.inl
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/Ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/Export.hpp
+	<SFML/Config.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/TcpSocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/Socket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/SocketHandle.hpp
+	<SFML/Config.hpp>
+	<basetsd.h>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/Http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/IpAddress.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/Packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/SocketSelector.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/TcpListener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+
+1435661976 /usr/local/SFML-2.2/include//SFML/Network/UdpSocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<vector>
+
+1678354648 /home/scm-studs/b1017692/chat_blanks/receiver.h
+	"queue.h"
+	<SFML/Network.hpp>
+
+1678354643 /home/scm-studs/b1017692/chat_blanks/util.h
+
+1680174931 source:/home/scm-studs/b1017692/chat_blanks/client.cpp
+	"queue.h"
+	"receiver.h"
+	"util.h"
+	<SFML/Network.hpp>
+	<iostream>
+	<thread>
+
+1678366080 source:/home/scm-studs/b1017692/chat_blanks/receiver.cpp
+	"receiver.h"
+	"util.h"
+	<chrono>
+	<cstring>
+	<iostream>
+	<iostream>
+	<sstream>
+	<thread>
+
+1680175005 source:/home/scm-studs/b1017692/chat_blanks/ChatApp/main.cpp
+	<iostream>
+
+1680176561 source:/home/scm-studs/b1017692/chat_blanks/server.cpp
+	"server.h"
+	"accepter.h"
+	"queue.h"
+	"list.h"
+	"receiver.h"
+	"util.h"
+	<SFML/Network.hpp>
+	<iostream>
+	<thread>
+
+1680175387 /home/scm-studs/b1017692/chat_blanks/server.h
+
